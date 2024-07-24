@@ -26,14 +26,12 @@ if __name__ == '__main__':
     bug.goto(0, 0)
     # Calculate the area of your circle and store it in a variable
     # Hint, you can use math.pi
-    area = size * 3.14 ^ 2
+    area = math.pi
     # Write the area of your circle using the turtle .write() method
     # my_turtle.write(arg="area = " + str(area), move=True, align='left', font=('Arial',8,'normal'))
     bug.write(arg="area = " + str(area), move=True, align='left', font=('Arial' ,8, 'normal'))
     # Hide your turtle
     bug.hideturtle()
     # Call turtle.done()
-    bug.done()
-# ======================================================================================================
-# Help with calculate area of circle and store it in variable
-# ======================================================================================================
+    turtle.done()
+    sys.exit(0)
