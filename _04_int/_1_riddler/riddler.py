@@ -19,6 +19,7 @@ if __name__ == '__main__':
 # After all the riddles have been asked, tell the user how many they got
 #  correct
 #"""
+    score = 0
     name = simpledialog.askstring(title="What is your name.",prompt="!@#$%^&*()_+")
     if name == "Jude" or name == "bradley" or name == "jude" or name == "Bradley" or name == "jude bradley" or name == "Jude Bradley" or name == "Gerry" or name == "Jerry" or name == "Gerardo" or name == "Gerardo Montana" or name == "Gerry Montana":
         simpledialog.askinteger(title="DIE", prompt="I AM GOING TO SNAP YOUR NECK, BREAK ALL OF YOUR BONES, AND DONATE YOUR ORGANS TO CHARITY")
@@ -36,6 +37,7 @@ if __name__ == '__main__':
 
     if a == "b" or a == "B":
         simpledialog.askstring(title="correct.",prompt="I point for you... im getting stabbed in the back as im writing thi")
+        score += 1
     else:
         simpledialog.askstring(title="Die.", prompt="")
 
@@ -44,10 +46,17 @@ if __name__ == '__main__':
     "2. Stand still until it goes away\n"
     "3. Fight back\n"
     "4. Move past it")
-    if b == "1":
-        messagebox.showwarning(title="ARE YOU CRAZY?!", message="ARE YOU CRAZY?!")
+    if b == 1:
+        simpledialog.askstring(title="ARE YOU CRAZY?!", prompt="ARE YOU CRAZY?!")
         sys.exit(0)
-    if b == "2" or b == "4":
+    if b == 2 or b == 4:
         simpledialog.askstring(title="Partially correct", prompt="Eh, it could be better")
-    if b == "3":
+    if b == 3:
         simpledialog.askstring(title="The best option", prompt="The primary targets when hitting a shark are: Gills, eyes, nose (Nose is more risky because of mouth)")
+        score += 1
+    KILL = simpledialog.askstring(title="No.", prompt="No more")
+    if KILL == "games" or KILL == "game" or KILL == "screen" or KILL == "screentime" or KILL == "technology":
+        score += 1
+        simpledialog.askstring(title="point.", prompt= score )
+    else:
+        simpledialog.askstring(title="n/a", prompt= score )

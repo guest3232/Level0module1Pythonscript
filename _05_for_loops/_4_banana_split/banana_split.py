@@ -24,6 +24,15 @@ Text Rendering Example:
 canvas.create_text(100, 50, text="text goes here", font=("Arial", 16))
 '''
 # Put your code below
-
-
+ypos = 50
+food = "Ice Cream"
+count = 1
+for you in range(4):
+    if count >= 4:
+        food = "Banana"
+    else:
+        food = "Ice Cream"
+    canvas.create_text(100, int(ypos), text=str(food), font=("Arial", 16))
+    ypos += 20
+    count += 1
 root.mainloop()

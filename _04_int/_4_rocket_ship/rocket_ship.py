@@ -1,12 +1,10 @@
 from tkinter import *
-
 window_width = 800
 window_height = 800
 root = Tk()
 
 canvas = Canvas(root, width=window_width, height=window_height, borderwidth=0, highlightthickness=0, bg="#000050")
 canvas.grid()
-
 
 # This code runs whenever the mouse is clicked on the window
 def mouse_pressed(event):

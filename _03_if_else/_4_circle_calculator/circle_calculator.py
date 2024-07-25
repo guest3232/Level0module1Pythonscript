@@ -13,8 +13,8 @@ if __name__ == '__main__':
     d = simpledialog.askstring(title='Choose: Area or Circumference', prompt="A. area\n"
     "B. circumference")
 
-    area = math.pi * c * c
-    circumference = math.pi * c * 2
+#    area = math.pi * c * c
+#    circumference = math.pi * c * 2
 
 #STOP
 # Next, ask the user if they would like to calculate the area or circumference of a circle.
